@@ -1,0 +1,9 @@
+# pose_tracking_cpu.pbtxt
+# Dette er en forenklet graf for pose landmark detection (CPU-versjon)
+input_stream: "input_video"
+output_stream: "pose_landmarks"
+node {
+  calculator: "PoseLandmarkCpuCalculator"
+  input_stream: "IMAGE:input_video"
+  output_stream: "LANDMARKS:pose_landmarks"
+}
